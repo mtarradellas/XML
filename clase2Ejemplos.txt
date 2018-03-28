@@ -1,0 +1,21 @@
+ej3)
+<!ELEMENT libro (titulo, listaAutores, editorial)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT listaAutores (autor, autor?, autor?, autor?, autor?)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+
+ej4)
+<!ELEMENT libro (titulo, listaAutores, editorial)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT listaAutores (autor+)>	//uno o mas
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+
+ej5)
+<!ELEMENT libro (#PCDATA | titulo | listaAutores | editorial)*>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT listaAutores (autor+)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+
